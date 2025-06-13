@@ -36,6 +36,7 @@ function ExchangeHome() {
       //  update the allExchange state to the server response
       setAllExchanges(response.data);
     } catch (error) {
+      console.log(error);
     } finally {
       setLoading(false);
     }
